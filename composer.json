@@ -1,0 +1,20 @@
+{
+    "name": "matt-harvey/civil-date-time",
+    "description": "Civil date and time library for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MattHarvey\\CivilDateTime\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matthew Harvey",
+            "email": "software@matthewharvey.net"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
