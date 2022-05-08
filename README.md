@@ -115,3 +115,8 @@ $sydney = new DateTimeZone('Australia/Sydney');
 $civilDateTime = new DateTimeImmutable('2021-06-26 20:34:05+10');
 CivilDateTime::forMomentInTimezone($dateTime, $sydney); // 26 Jun. 2021, 8:34:05pm
 ```
+
+## Contributing
+
+Contributions and are very welcome. Please ensure unit test coverage is maintained.
+(`composer test` runs the test suite.)
