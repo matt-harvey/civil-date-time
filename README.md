@@ -124,5 +124,6 @@ CivilDateTime::forMomentInTimezone($dateTime, $sydney); // 26 Jun. 2021, 8:34:05
 
 ## Contributing
 
-Contributions and are very welcome. Please ensure unit test coverage is maintained.
-(`composer test` runs the test suite.)
+PRs, bug reports, and suggestions are all welcome. Please ensure unit test coverage is maintained.
+
+`composer test` runs the test suite.
