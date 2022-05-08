@@ -63,6 +63,7 @@ final class CivilDateTimeTest extends TestCase
         $adelaide = new DateTimeZone('Australia/Adelaide');
         $dt = $civilDateTime->toDateTimeImmutable($adelaide);
         $this->assertSame('2020-05-05T20:40:15', $dt->format($isoDateTime));
+        $this->assertSame('UTC', $dt->getTimezone()->getName());
     }
 
     /** @suppress PhanTypeMismatchArgumentNullable */
