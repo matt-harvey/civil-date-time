@@ -56,7 +56,8 @@ CivilDate::fromIsoDateStamp('2022-03-15')->__toString(); // 2022-03-15
 // converting from standard library \DateTimeInterface to CivilDate
 // e.g., the moment that is 1:30pm in UTC on 22 Jan. 2021, falls on 23 January 2021 in Sydney
 $dateTime = new DateTimeImmutable('2021-01-22 13:30:01+0');
-CivilDate::forMomentInTimezone($dateTime, $adelaide); // 23 January 2021
+$sydney = new DateTimeZone('Australia/Sydney');
+CivilDate::forMomentInTimezone($dateTime, $sydney); // 23 January 2021
 
 // immutable addition/subtraction of days
 CivilDate::fromIsoDateStamp('2022-03-15')->addDays(3); // 18 March 2022
