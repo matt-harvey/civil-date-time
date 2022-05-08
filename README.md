@@ -2,8 +2,8 @@
 
 [![Latest Stable Version](http://poser.pugx.org/matt-harvey/civil-date-time/v)](https://packagist.org/packages/matt-harvey/civil-date-time)
 [![Total Downloads](http://poser.pugx.org/matt-harvey/civil-date-time/downloads)](https://packagist.org/packages/matt-harvey/civil-date-time)
-[![Latest Unstable Version](http://poser.pugx.org/matt-harvey/civil-date-time/v/unstable)](https://packagist.org/packages/phpunit/phpunit)
-[![License](http://poser.pugx.org/matt-harvey/civil-date-time/license)](https://packagist.org/packages/phpunit/phpunit)
+[![Latest Unstable Version](http://poser.pugx.org/matt-harvey/civil-date-time/v/unstable)](https://packagist.org/packages/matt-harvey/civil-date-time)
+[![License](http://poser.pugx.org/matt-harvey/civil-date-time/license)](https://packagist.org/packages/matt-harvey/civil-date-time)
 [![PHP Version Require](http://poser.pugx.org/matt-harvey/civil-date-time/require/php)](https://packagist.org/packages/matt-harvey/civil-date-time)
 
 > a civil date and time library for PHP
