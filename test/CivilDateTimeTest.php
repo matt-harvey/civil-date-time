@@ -56,14 +56,14 @@ final class CivilDateTimeTest extends TestCase
 
         $sydney = new DateTimeZone('Australia/Sydney');
         $dt = $civilDateTime->toDateTimeImmutable($sydney);
-        $this->assertSame('2010-05-06T06:13:59', $dt->format($isoDateTime));
+        $this->assertSame('2010-05-06T16:13:59+10:00', $dt->format('c'));
 
         $stamp = '2020-05-06T06:10:15';
         $civilDateTime = CivilDateTime::fromIsoDateTimeStamp($stamp);
         $adelaide = new DateTimeZone('Australia/Adelaide');
         $dt = $civilDateTime->toDateTimeImmutable($adelaide);
-        $this->assertSame('2020-05-05T20:40:15', $dt->format($isoDateTime));
-        $this->assertSame('UTC', $dt->getTimezone()->getName());
+        $this->assertSame('2020-05-06T06:10:15+09:30', $dt->format('c'));
+        $this->assertSame('Australia/Adelaide', $dt->getTimezone()->getName());
     }
 
     /** @suppress PhanTypeMismatchArgumentNullable */

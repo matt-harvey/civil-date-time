@@ -40,8 +40,7 @@ class CivilDateTime
         return (new DateTimeImmutable())
             ->setTimezone($timezone)
             ->setDate($this->getYear(), $this->getMonth(), $this->getDay())
-            ->setTime($this->get24Hour(), $this->getMinute(), $this->getSecond())
-            ->setTimezone(new DateTimeZone('UTC'));
+            ->setTime($this->get24Hour(), $this->getMinute(), $this->getSecond());
     }
 
     /**

@@ -120,6 +120,11 @@ CivilDateTime::fromIsoDateTimeStamp('2022-03-15T22:11:18');
 $sydney = new DateTimeZone('Australia/Sydney');
 $civilDateTime = new DateTimeImmutable('2021-06-26 20:34:05+10');
 CivilDateTime::forMomentInTimezone($dateTime, $sydney); // 26 Jun. 2021, 8:34:05pm
+
+// convert back
+$civilDateTime->toDateTimeImmutable('Australia/Sydney'); // 26 Jun. 2021, 8:34:05pm, Australia/Sydney
+// or
+$civilDateTime->toDateTimeImmutable('Australia/Perth');  // 26 Jun. 2021, 8:34:05pm, Australia/Perth
 ```
 
 ## Contributing
