@@ -22,6 +22,7 @@ final class CivilDateTimeTest extends TestCase
         $civilTime = new CivilTime(6, 13, 59);
         $civilDateTime = new CivilDateTime($civilDate, $civilTime);
         $this->assertSame('2010-05-06T06:13:59', $civilDateTime->toIsoDateTimeStamp());
+        $this->assertSame('DUMMY', 'testing that this makes GH action fail');
     }
 
     public function testForMomentInTimezone(): void
