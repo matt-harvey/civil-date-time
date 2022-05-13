@@ -1,5 +1,6 @@
 # civil-date-time
 
+[![Github actions Build](https://github.com/matt-harvey/civil-date-time/workflows/test/badge.svg)](https://github.com/matt-harvey/civil-date-time/actions/workflows/test.yml)
 [![Latest Stable Version](http://poser.pugx.org/matt-harvey/civil-date-time/v)](https://packagist.org/packages/matt-harvey/civil-date-time)
 [![Total Downloads](http://poser.pugx.org/matt-harvey/civil-date-time/downloads)](https://packagist.org/packages/matt-harvey/civil-date-time)
 [![Latest Unstable Version](http://poser.pugx.org/matt-harvey/civil-date-time/v/unstable)](https://packagist.org/packages/matt-harvey/civil-date-time)
