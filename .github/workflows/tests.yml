@@ -37,6 +37,3 @@ jobs:
 
     - name: Run test suite
       run: composer test
-
-    - name: Codecov
-      uses: codecov/codecov-action@v3.1.0
