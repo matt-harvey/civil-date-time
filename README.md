@@ -56,7 +56,7 @@ CivilDate::fromIsoDateStamp('2022-03-15');
 CivilDate::fromIsoDateStamp('2022-03-15')->format('D j M Y'); // 'Sat 15 Mar 2022'
 
 // convenience method for ISO format
-CivilDate::fromIsoDateStamp('2022-03-15')->toIsoDateStamp; // 2022-03-15
+CivilDate::fromIsoDateStamp('2022-03-15')->toIsoDateStamp(); // 2022-03-15
 // or just
 CivilDate::fromIsoDateStamp('2022-03-15')->__toString(); // 2022-03-15
 
