@@ -138,6 +138,18 @@ $civilDateTime->toDateTimeImmutable('Australia/Sydney'); // 26 Jun. 2021, 8:34:0
 $civilDateTime->toDateTimeImmutable('Australia/Perth');  // 26 Jun. 2021, 8:34:05pm, Australia/Perth
 ```
 
+## Civil date/time in other PHP libraries
+
+* https://github.com/brick/date-time offers the `LocalDate`, `LocalTime` and `LocalDateTime`
+  classes, that are analogous to `civil-date-time`'s `CivilDate`, `CivilTime` and `CivilDateTime`. It also offers
+  classes for modelling many other date/time concepts, which `civil-date-time` doesn't
+  do&mdash;including `ZonedDateTime` as a replacement for the standard library
+  `DateTimeImmutable`. You might prefer it to `civil-date-time` if you're looking for a more extensive set of date/time
+  utilities, rather than a minimal adjunct to the standard library to plug just the civil date/time gap.
+* https://github.com/cakephp/chronos offers a `Date` class, which is notionally similar to `civil-date-time`'s
+  `CivilDate`; however it extends `DateTimeImmutable` and so carries a lot of redundant data
+  as well as no-op functions inherited from the latter.
+
 ## Civil date/time libraries in other programming languages
 
 * Go: https://pkg.go.dev/cloud.google.com/go/civil
