@@ -18,18 +18,19 @@ However, it is a good way to represent the concept of a "calendar date" or "cloc
 used in many everyday contexts.
 
 For example, if someone was born on 1 January 2000, then they will typically want to celebrate their
-birthday on 1 January each year, in whichever timezone they happen to be living in at the time. In
+birthday on 1 January each year, in _whichever_ timezone they happen to be living in at the time. In
 other words, the entity "1 January 2000", insofar as it represents their date of birth, is
 timezone-agnostic.
 
 In a software context, this might be important if, for example, we want to send an email to each
-user on their birthday&mdash;whichever timezone that user happens to be in. It is with the user
-that the timezone is associated here&mdash;not with the date.
+user on their birthday, where each user may have a different timezone associated with them. A given
+user's timezone might change over time; but their date of birth will not. It is with the user that
+the timezone should be associated here&mdash;not with their date of birth.
 
-While it's possible to use the PHP standard library's `DateTime` or `DateTimeImmutable` to represent
-civil dates and times in PHP, it isn't ideal; as it requires an out-of-band convention about how to
-interpret the timezone information attached to such an object. (Should the timezone data _merely_
-be ignored? Should the date time be converted to UTC and _then_ have its timezone ignored? Or should
+While it's possible to use the standard library's `DateTime` or `DateTimeImmutable` to represent
+civil dates and times in PHP, it isn't ideal, as it requires an out-of-band convention about how to
+interpret the timezone information attached to such an object. (Should the timezone data _merely_ be
+ignored? Should the date time be converted to UTC and _then_ have its timezone ignored? Or should
 non-UTC `DateTime`s be considered invalid as representations of civil dates?)
 
 A dedicated class, that omits timezone information by design, allows civil dates, times, and date-time
