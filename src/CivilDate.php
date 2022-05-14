@@ -12,12 +12,16 @@ use DateTimeZone;
 use Exception;
 use MattHarvey\CivilDateTime\Internal\StringUtil;
 
+/**
+ * An immutable representation of a calendar date, without accompanying
+ * time or timezone information.
+ */
 class CivilDate
 {
     public function __construct(
-        private int $year,
-        private int $month,
-        private int $day,
+        private readonly int $year,
+        private readonly int $month,
+        private readonly int $day,
     )
     {
     }

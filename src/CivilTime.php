@@ -4,15 +4,19 @@ namespace MattHarvey\CivilDateTime;
 
 use MattHarvey\CivilDateTime\Internal\StringUtil;
 
+/**
+ * An immutable representation of a "clock face time", that is not accompanied by
+ * a date or timezone.
+ */
 class CivilTime
 {
     public const AM = 'am';
     public const PM = 'pm';
 
     public function __construct(
-        private int $hour,
-        private int $minute,
-        private int $second,
+        private readonly int $hour,
+        private readonly int $minute,
+        private readonly int $second,
     )
     {
     }

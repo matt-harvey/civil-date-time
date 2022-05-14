@@ -51,6 +51,14 @@ Note this library is still in a pre-v1 state, and there may be breaking changes 
 
 ## Usage
 
+There are three classes offered:
+* `CivilDate`
+* `CivilTime`
+* `CivilDateTime`
+
+Each of these is immutable: methods such as `CivilDate::addDays()` always return new
+instances, rather than mutating the existing one.
+
 ### Civil dates
 
 ```php

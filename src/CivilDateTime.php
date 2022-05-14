@@ -10,11 +10,15 @@ use DateTimeInterface;
 use DateTimeZone;
 use MattHarvey\CivilDateTime\Internal\Format;
 
+/**
+ * An immutable representation of a date and time that is not accompanied
+ * by any particular timezone.
+ */
 class CivilDateTime
 {
     public function __construct(
-        private CivilDate $civilDate,
-        private CivilTime $civilTime,
+        private readonly CivilDate $civilDate,
+        private readonly CivilTime $civilTime,
     )
     {
     }
