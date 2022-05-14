@@ -36,7 +36,7 @@ non-UTC `DateTime`s be considered invalid as representations of civil dates?)
 A dedicated class, that omits timezone information by design, allows civil dates, times, and date-time
 pairings, to be represented cleanly and directly.
 
-For more use concrete cases for civil dates, times, and date-times, see
+For additional concrete use cases for civil dates, times, and date-times, see
 [this](https://github.com/golang/go/issues/19700#issuecomment-557820096)
 comment in relation to a similar library proposed for Go.
 
