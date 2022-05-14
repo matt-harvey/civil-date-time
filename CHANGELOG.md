@@ -1,5 +1,11 @@
 # Changelog
 
+### v0.2.1
+
+* Document that instances are immutable
+* Use `readonly` to internally document/enforce property immutability within each class
+* Various improvements in README
+
 ### v0.2.0
 
 #### Breaking change
