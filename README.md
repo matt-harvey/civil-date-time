@@ -17,9 +17,14 @@ Such an entity should not be used for representing a precise, absolute moment or
 However, it is a good way to represent the concept of a "calendar date" or "clock time" as it is
 used in many everyday contexts.
 
-For example, if someone says that Christmas is on the 25th of December, they generally mean only
-that it's that date in the calendar; and that people celebrate it on that date on _their_ calendar,
-regardless of which timezone they happen to find themselves in.
+For example, if someone was born on 1 January 2000, then they will typically want to celebrate their
+birthday on 1 January each year, in whichever timezone they happen to be living in at the time. In
+other words, the entity "1 January 2000", insofar as it represents their date of birth, is
+timezone-agnostic.
+
+In a software context, this might be important if, for example, we want to send an email to each
+user on their birthday&mdash;whichever timezone that user happens to be in. It is with the user
+that the timezone is associated here&mdash;not with the date.
 
 While it's possible to use the PHP standard library's `DateTime` or `DateTimeImmutable` to represent
 civil dates and times in PHP, it isn't ideal; as it requires an out-of-band convention about how to
